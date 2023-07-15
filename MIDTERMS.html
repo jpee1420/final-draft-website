@@ -1,0 +1,950 @@
+<!--  HTML entities used to display HTML tags as plain text in webpage:
+&lt; - <
+&gt; - >
+-->
+<!-- not mobile responsive -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1><a href="#">HTML & CSS Portfolio</a></h1>
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Portfolio: Learn HTML & CSS</h1>
+        <p>
+          Welcome to our immersive learning hub! Dive into the world of web
+          development with HTML and CSS and discover the keys to crafting
+          stunning websites. Unleash your creativity, enhance your digital
+          skills, and embark on a journey towards building beautiful, functional
+          web experiences. Let's unlock the potential of HTML and CSS together!
+        </p>
+        <img
+          class="header-img"
+          src="image/header image.jpg"
+          alt="header image"
+        />
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="table-of-contents">
+        <h1>Table of Contents</h1>
+        <ol>
+          <li><a href="#what-is-html">What is HTML?</a></li>
+          <li><a href="#web-structure">Web Page Document Structure</a></li>
+          <li><a href="#first-web">First Web Page</a></li>
+          <li><a href="#attributes">Attributes</a></li>
+          <li><a href="#inserting-image">Inserting Images</a></li>
+          <li><a href="#hyperlink">Hyperlinks</a></li>
+          <li><a href="#list">Lists</a></li>
+          <li><a href="#css">Cascading Style Sheets (CSS)</a></li>
+          <li>
+            <a href="#selectors">Selectors</a>
+            <ul>
+              <li><a href="#tag-selector">Tag Selector</a></li>
+              <li><a href="#class-selector">Class Selector</a></li>
+              <li><a href="#id-selector">ID Selector</a></li>
+              <li><a href="#grouped-selector">Group Selector</a></li>
+              <li>
+                <a href="#context-dependent-selector"
+                  >Context Dependent Selector</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#css-background">CSS Background</a>
+            <ul>
+              <li><a href="#css-background-color">Background Color</a></li>
+              <li><a href="#css-background-image">Background Image</a></li>
+              <li>
+                <a href="#css-background-position">Background Position</a>
+              </li>
+              <li><a href="#css-background-repeat">Background Repeat</a></li>
+              <li><a href="#css-background-size">Background Size</a></li>
+            </ul>
+          </li>
+          <li><a href="#html-table">Tables</a></li>
+          <li><a href="#css-box-model">Box Model</a></li>
+          <li><a href="#css-margin">Margins</a></li>
+          <li><a href="#css-padding">Paddings</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content" id="what-is-html">
+        <h1 class="heading">What is HTML?</h1>
+        <ul>
+          <li>stands for HyperText Markup Language.</li>
+          <li>
+            Hyper refers to creating linked and nonlinear structures of
+            information.
+          </li>
+          <li>Text refers to words on the computer screen that we mark up.</li>
+          <li>
+            Markup is the process of preparing the text to define how it
+            displays when viewed as pages on the WWW by marking them with
+            formatting directions conveyed by notations called tags.
+          </li>
+          <li>
+            Language is a system of signs used for communication—written and
+            oral.
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="web-structure">
+        <h1 class="heading">Web Page Document Structure</h1>
+        <ul>
+          <li>
+            The easiest way to create and develop is to type the required
+            elements in as a starting point.
+          </li>
+          <li>In Notepad you would start with:</li>
+        </ul>
+        <pre><code>
+&lt;html&gt;
+  &lt;head&gt;
+&lt;title&gt; &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+        <ul>
+          <li>
+            Although, HTML is not case sensitive, it is a standard practice to
+            always type HTML tags in uppercase letters.
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="first-web">
+        <h1 class="heading">First Web Page</h1>
+
+        <pre><code>
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Your First HTML5 Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt; Hello World &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+
+        <img
+          class="content-img"
+          src="image/FirstWebPage.jpg"
+          alt="first web page"
+        />
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="attributes">
+        <h1 class="heading">Attributes</h1>
+        <ul>
+          <li>
+            Attributes - provides additional information about the specific
+            element and they are always specified in the opening tag.
+          </li>
+        </ul>
+        <p>Example:</p>
+        <p>
+          <code
+            >&lt;a href = "http://www.myurl.com"&gt;This is a
+            link&lt;/a&gt;</code
+          >
+        </p>
+        <p>
+          <code
+            >&lt;img src= "hello.jpg" alt="This is a picture of hello"&gt;</code
+          >
+        </p>
+        <ul>
+          <li>ID - This attribute assigns a name to your element</li>
+          <li>
+            Class - an attribute use to assign some general properties to your
+            element.
+          </li>
+        </ul>
+        <p>
+          <b>Background Color:</b> use the <code>BGCOLOR</code> attribute to set
+          the document's background color.
+        </p>
+        <p>
+          <code>&lt;BODY BGCOLOR="#FFFFFF"&gt;&lt;/BODY&gt;</code>
+        </p>
+        <p>
+          <b>Text Color:</b> use <code>TEXT</code> attribute to control the
+          color of the normal text in the document.
+        </p>
+        <p>
+          <code
+            >&lt;BODY BGCOLOR="#FFFFFF" TEXT="#FF0000"&gt;&lt;/BODY&gt;</code
+          >
+        </p>
+        <p>
+          <b>Image Background:</b> use <code>BACKGROUND</code> attribute to set
+          an image background for the document.
+        </p>
+        <p>
+          <code
+            >&lt;BODY BACKGROUND="logo.gif"
+            BGCOLOR="#FFFFFF"&gt;&lt;/BODY&gt;</code
+          >
+        </p>
+        <div class="img-container">
+          <img src="image/attribute1.jpg" alt="attribute1" />
+          <img src="image/attribute0.jpg" alt="attribute0" />
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="inserting-image">
+        <h1 class="heading">Inserting Images</h1>
+        <p>To insert images to your web page, we can use the &lt;img&gt; tag</p>
+        <p>Syntax</p>
+        <pre><code>
+&lt;img src="url" alt="text" [width="n"]/&gt;
+      </code></pre>
+        <p>Example</p>
+        <pre><code>
+&lt;img src="cat.jpg" alt="cat photo"/&gt;
+        </code></pre>
+        <img src="image/cat.jpg" alt="cat" />
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="hyperlink">
+        <h1 class="heading">Hyperlinks</h1>
+        <p>To create hyperlinks, we can use the anchor tag &lt;a&gt;</p>
+        <p>Syntax</p>
+        <pre><code>
+&lt;a href="url" [target=targetvalue]&gt;...&lt;/a&gt;
+      </code></pre>
+        <p>Example</p>
+        <p>This is a <a href="#hyperlink">HYPERLINK</a></p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="list">
+        <h1 class="heading">Lists</h1>
+        <p>Unordered list</p>
+
+        <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+&lt;/ul&gt;
+      </code></pre>
+
+        <img src="image/ul.jpg" alt="unordered list" />
+        <p>Ordered list</p>
+        <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+&lt;/ol&gt;
+      </code></pre>
+
+        <img src="image/ol.jpg" alt="ordered list" />
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="css">
+        <h1 class="heading">CSS</h1>
+        <p>
+          CSS stands for Cascading Style Sheets. It is a way to divide the
+          content from the layout on web pages.
+        </p>
+        <h1 class="heading">Where to place CSS tags?</h1>
+        <p>Inline CSS</p>
+        <pre><code>
+&lt;body style="property: value;"&gt;[content]&lt;/body&gt;
+      </code></pre>
+        <p>Internal CSS</p>
+        <pre><code>
+&lt;head&gt;
+  &nbsp&lt;style&gt; &lt;/style&gt;
+&lt;/head&gt;
+      </code></pre>
+        <p>External CSS</p>
+        <pre><code>
+&lt;head&gt;
+  &nbsp&lt;link rel=stylesheet href="style.css" type="text/css"&gt;
+&lt;/head&gt;
+      </code></pre>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="selectors">
+        <h1 class="heading">Selectors</h1>
+        <p>
+          <b>Selectors</b> are the names that you give to your different styles.
+          In the style definition you define how each selector should work
+          (font, color etc.). Then, in the body of your pages, you refer to
+          these selectors to activate the styles.
+        </p>
+      </div>
+
+      <div class="content" id="tag-selector">
+        <h1 class="heading">Tag Selector</h1>
+        <p>Also called html selectors, they affect html tags</p>
+        <p>Syntax</p>
+
+        <pre><code>
+htmlselector {
+  property: value;
+}
+      </code></pre>
+
+        <p>Example</p>
+
+        <pre><code>
+h1 {
+  color: blue;
+}
+      </code></pre>
+
+        <p><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></p>
+        <img src="image/selector0.jpg" alt="selector0" class="content-img" />
+      </div>
+      <div class="content" id="class-selector">
+        <h1 class="heading">Class Selector</h1>
+        <p>
+          Class selector are used when you want to define a style that does not
+          redefine an HTML tag entirely.
+        </p>
+        <p>Syntax</p>
+
+        <pre><code>
+.classname {
+  property: value;
+}
+      </code></pre>
+
+        <p>Example</p>
+
+        <pre><code>
+.red {
+  color: red;
+}
+      </code></pre>
+
+        <p><code>&lt;p class="red"&gt;...&lt;/p&gt;</code></p>
+
+        <img src="image/selector1.jpg" alt="selector0" />
+      </div>
+
+      <div class="content" id="id-selector">
+        <h1 class="heading">ID Selector</h1>
+        <p>Selects HTML elements with the specified ID.</p>
+        <p>Syntax</p>
+        <pre><code>
+#IDName {
+  property: value;
+}
+      </code></pre>
+
+        <p>Example</p>
+        <pre><code>
+#red {
+  color: red;
+}
+      </code></pre>
+        <p><code>&lt;p id="red"&gt;...&lt;/p&gt;</code></p>
+        <img src="image/selector1.jpg" alt="selector1" />
+      </div>
+      <div class="content" id="grouped-selector">
+        <h1 class="heading">Grouped Selector</h1>
+        <p>
+          Most often selectors will share some of the same styles, for example,
+          being based on the same font.In these cases, rather than defining the
+          font for each and every selector, one by one, you can group them, and
+          thus assign the font to all the selectors at once.
+        </p>
+        <p>Syntax</p>
+        <pre><code>
+selector1, selector2, selector3 {
+  property: value;
+}
+      </code></pre>
+        <p>Example</p>
+        <pre><code>
+h1,h2,h3 {
+  text-align: center;
+  color: blue;
+}
+      </code></pre>
+        <img src="image/selector2.jpg" alt="selector2" />
+      </div>
+
+      <div class="content" id="context-dependent-selector">
+        <h1 class="heading">Context Dependent Selector</h1>
+        <p>
+          It is possible to make selectors that will only work in certain
+          contexts.
+        </p>
+        <p>Syntax</p>
+        <pre><code>
+selector1 selector2 {
+  property: value;
+}
+      </code></pre>
+        <p>
+          This means that the style specified will only affect those who are
+          selected by selector2 if they are also within selector 1
+        </p>
+        <p>Example</p>
+        <pre><code>
+h1 b {
+  color: blue;
+}
+
+b {
+  color: red;
+}
+      </code></pre>
+        <p><code>&lt;h1&gt;Hello &lt;b&gt;World&lt;/b&gt;&lt;/h1&gt;</code></p>
+        <p>
+          <code>&lt;p&gt;The quick &lt;b&gt;red&lt;/b&gt; fox&lt;/p&gt;</code>
+        </p>
+        <img class="content-img" src="image/selector3.jpg" alt="selector3" />
+      </div>
+      <hr />
+    </div>
+    a
+
+    <div class="container">
+      <div class="content" id="css-background">
+        <h1 class="heading">CSS Background</h1>
+        <p>
+          Background property is a shorthand property for background-color,
+          background-image, background-position, background-repeat, etc..
+        </p>
+      </div>
+
+      <div class="content" id="css-background-color">
+        <h1 class="heading">Background Color</h1>
+        <p>Syntax</p>
+        <pre><code>
+background-color: value;
+      </code></pre>
+        <p>Example</p>
+        <pre><code>
+body {
+  background-color: coral;
+}
+      </code></pre>
+        <img
+          class="content-img"
+          src="image/background0.jpg"
+          alt="background0"
+        />
+      </div>
+
+      <div class="content" id="css-background-image">
+        <h1 class="heading">Background Image</h1>
+        <p>Syntax</p>
+        <pre><code>
+background-image: url("image.extension");
+      </code></pre>
+        <p>Example</p>
+        <pre><code>
+body {
+  background-image: url("cat-background.jpg");
+}
+      </code></pre>
+        <img src="image/background1.jpg" alt="background1" />
+      </div>
+
+      <div class="content" id="css-background-position">
+        <h1 class="heading">Background Position</h1>
+        <p>Sets position of background image</p>
+        <p>Syntax</p>
+        <pre><code>
+background-position: value;
+      </code></pre>
+
+        <table>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>
+              left top<br />
+              left center<br />
+              left bottom<br />
+              right top<br />
+              right center<br />
+              right bottom<br />
+              center top<br />
+              center center<br />
+              center bottom<br />
+            </td>
+            <td>
+              If you only specify one keyword, the other value will be "center"
+            </td>
+          </tr>
+          <tr>
+            <td>x% y%</td>
+            <td>
+              The first value is the horizontal position and the second value is
+              the vertical. The top left corner is 0% 0%. The right bottom
+              corner is 100% 100%. If you only specify one value, the other
+              value will be 50%. . Default value is: 0% 0%
+            </td>
+          </tr>
+          <tr>
+            <td>xpos ypos</td>
+            <td>
+              The first value is the horizontal position and the second value is
+              the vertical. The top left corner is 0 0. Units can be pixels (0px
+              0px) or any other
+              <a
+                href="https://www.w3schools.com/cssref/css_units.php"
+                target="_blank"
+                >CSS units</a
+              >. If you only specify one value, the other value will be 50%. You
+              can mix % and positions
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="content" id="css-background-repeat">
+        <h1 class="heading">Background Repeat</h1>
+        <p>Sets how background images is repeated</p>
+        <p>Syntax</p>
+        <pre><code>
+background-repeat: value;
+      </code></pre>
+
+        <table>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Repeat</td>
+            <td>
+              The background image is repeated both vertically and horizontally.
+              The last image will be clipped if it does not fit. This is default
+            </td>
+          </tr>
+          <tr>
+            <td>repeat-x</td>
+            <td>The background image is repeated only horizontally</td>
+          </tr>
+          <tr>
+            <td>repeat-y</td>
+            <td>The background image is repeated only vertically</td>
+          </tr>
+          <tr>
+            <td>no-repeat</td>
+            <td>
+              The background-image is not repeated. The image will only be shown
+              once
+            </td>
+          </tr>
+          <tr>
+            <td>space</td>
+            <td>
+              The background-image is repeated as much as possible without
+              clipping. The first and last images are pinned to either side of
+              the element, and whitespace is distributed evenly between the
+              images
+            </td>
+          </tr>
+          <tr>
+            <td>round</td>
+            <td>
+              The background-image is repeated and squished or stretched to fill
+              the space (no gaps)
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="content" id="css-background-size">
+        <h1 class="heading">Background Size</h1>
+        <p>Specifies the size of the background image</p>
+        <p>Syntax</p>
+        <pre><code>
+background-size: value;
+      </code></pre>
+
+        <table>
+          <tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>auto</td>
+            <td>
+              Default value. The background image is displayed in its original
+              size
+            </td>
+          </tr>
+          <tr>
+            <td>length</td>
+            <td>
+              Sets the width and height of the background image. The first value
+              sets the width, the second value sets the height. If only one
+              value is given, the second is set to "auto".
+            </td>
+          </tr>
+          <tr>
+            <td>percentage</td>
+            <td>
+              Sets the width and height of the background image in percent of
+              the parent element. The first value sets the width, the second
+              value sets the height. If only one value is given, the second is
+              set to "auto"
+            </td>
+          </tr>
+          <tr>
+            <td>cover</td>
+            <td>
+              Resize the background image to cover the entire container, even if
+              it has to stretch the image or cut a little bit off one of the
+              edges
+            </td>
+          </tr>
+          <tr>
+            <td>contain</td>
+            <td>
+              Resize the background image to make sure the image is fully
+              visible
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="html-table">
+        <h1 class="heading">HTML Tables</h1>
+        <ul>
+          <li>The <code>&lt;table&gt;</code> tag defines an HTML table.</li>
+          <li>
+            Each table row is defined with a <code>&lt;tr&gt;</code> tag. Each
+            table header is defined with a <code>&lt;th&gt;</code> tag. Each
+            data/cell is defined with a <code>&lt;td&gt;</code> tag.
+          </li>
+          <li>
+            By default, the text in <code>&lt;th&gt;</code> elements are bold
+            and centered.
+          </li>
+          <li>
+            By default, the text in <code>&lt;td&gt;</code> elements are regular
+            and left-aligned.
+          </li>
+        </ul>
+        <p>Example</p>
+        <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt; Name &lt;/th&gt;
+        &lt;th&gt; Address &lt;/th&gt;
+        &lt;th&gt; Contact &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt; Stanley Roxas &lt;/td&gt; 
+        &lt;td&gt; Dagupan City &lt;/td&gt; 
+        &lt;td&gt; 09112223333 &lt;/td&gt; 
+    &lt;/tr&gt; 
+    &lt;tr&gt; 
+        &lt;td&gt; Julio Castro &lt;/td&gt; 
+        &lt;td&gt; Olongapo City &lt;/td&gt; 
+        &lt;td&gt; 09123456789 &lt;/td&gt; 
+    &lt;/tr&gt; 
+&lt;/table&gt;
+        </code></pre>
+        <img src="image/table0.jpg" alt="table0" />
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="content" id="css-box-model">
+        <h1 class="heading">Box Model</h1>
+        <ul>
+          <li>
+            All HTML elements can be considered as boxes. In CSS, the term "box
+            model" is used when talking about design and layout.
+          </li>
+          <li>
+            The CSS box model is essentially a box that wraps around every HTML
+            element. It consists of: <br />margins, borders, padding, and the
+            content. The image below illustrates the box model:
+          </li>
+        </ul>
+        <img
+          class="content-img"
+          src="image/cssboxmodel.jpg"
+          alt="css box model"
+        />
+
+        <p>Explantion of the different boxes</p>
+        <ul>
+          <li>
+            <b>Content</b> - the content of the box where texts and images
+            appear.
+          </li>
+          <li>
+            <b>Badding</b> - Clears an area around the content. The padding is
+            transparent.
+          </li>
+          <li><b>Border</b> - A border goes around the padding and content.</li>
+          <li>
+            <b>Margin</b> - Clears an area outside the border. The margin is
+            transparent.
+          </li>
+        </ul>
+
+        <h1 class="heading">Demo</h1>
+        <p>HTML</p>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Box Model Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;h2&gt;University of Luzon&lt;/h2&gt;
+  &lt;h1&gt;College of Computer Studies&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+        <p>CSS</p>
+        <pre><code>
+* {
+margin: 0;
+padding: 0;
+}
+
+h1 {
+border: solid 1px black;
+}
+
+h2 {
+border: solid 2px red;
+}
+      </code></pre>
+        <img class="content-img" src="image/boxbodel0.jpg" alt="" />
+      </div>
+
+      <div class="content" id="css-margin">
+        <h1 class="heading">Margins</h1>
+        <p>
+          The CSS margin properties are used to create space around elements,
+          outside of any defined borders.
+        </p>
+        <p>
+          CSS has properties for specifying the margin for each side of an
+          element:
+        </p>
+        <ul>
+          <li>margin-top</li>
+          <li>margin-right</li>
+          <li>margin-bottom</li>
+          <li>margin-left</li>
+        </ul>
+        <p>All the margin properties can have the following values:</p>
+        <ul>
+          <li>auto - the browser calculates the margin</li>
+          <li>length - specifies a margin in px, pt, cm, etc.</li>
+          <li>
+            % - specifies a margin in % of the width of the containing element
+          </li>
+          <li>
+            inherit - specifies that the margin should be inherited from the
+            parent element
+          </li>
+        </ul>
+        <h1 class="heading" id="margin-shorthand">
+          Margins (Shorthand Property)
+        </h1>
+        <p>If the margin property has four values:</p>
+        <p><code>margin: 25px 50px 75px 100px;</code></p>
+        <ul>
+          <li>top margin: 25px</li>
+          <li>right margin: 50px</li>
+          <li>bottom margin: 75px</li>
+          <li>left margin: 100px</li>
+        </ul>
+        <p>If the margin property has three values:</p>
+        <p><code>margin: 25px 50px 75px;</code></p>
+        <ul>
+          <li>top margin: 25px</li>
+          <li>right and left margins: 50px</li>
+          <li>bottom margin: 75px</li>
+        </ul>
+        <p>If the margin property has two values:</p>
+        <p><code>margin: 25px 50px;</code></p>
+        <ul>
+          <li>top and bottom margins: 25px</li>
+          <li>right and left margins: 50px</li>
+        </ul>
+        <p>If margin property has one value:</p>
+        <p><code>margin: 25px;</code></p>
+        <ul>
+          <li>All four margins are 25px</li>
+        </ul>
+
+        <h1 class="heading">Demo</h1>
+        <p>HTML</p>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Box Model Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;h2&gt;University of Luzon&lt;/h2&gt;
+  &lt;h1&gt;College of Computer Studies&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+        <p>CSS</p>
+        <pre><code>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border: solid 1px black;
+  margin: 30px 40px;
+}
+
+h2 {
+  border: solid 2px red;
+  margin: 10px 50px;
+}
+      </code></pre>
+        <img class="content-img" src="image/margins.jpg" alt="margins" />
+      </div>
+
+      <div class="content" id="css-padding">
+        <h1>Paddings</h1>
+        <p>
+          The CSS padding properties are used to generate space around an
+          element's content, inside of any defined borders.
+        </p>
+        <p>
+          With CSS, you have full control over the padding. There are properties
+          for setting the padding for each side of an element (top, right,
+          bottom, and left).
+        </p>
+        <p>
+          CSS has properties for specifying the padding for each side of an
+          element:
+        </p>
+        <ul>
+          <li>padding-top</li>
+          <li>padding-right</li>
+          <li>padding-bottom</li>
+          <li>padding-left</li>
+        </ul>
+        <p>All the padding properties can have the following values:</p>
+        <ul>
+          <li>length - specifies a padding in px, pt, cm, etc.</li>
+          <li>
+            % - specifies a padding in % of the width of the containing element
+          </li>
+          <li>
+            inherit - specifies that the padding should be inherited from the
+            parent element
+          </li>
+          <li><strong>Note</strong> - Negative values are not allowed.</li>
+        </ul>
+        <h1 class="heading">Padding (Shorthand Property)</h1>
+        <p>
+          Padding shorthand property is similar to margin shorthand property.
+          See <a href="#margin-shorthand">margin shorthand property</a> for
+          reference.
+        </p>
+
+        <h1 class="headin">Demo</h1>
+        <p>HTML</p>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Box Model Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;h2&gt;University of Luzon&lt;/h2&gt;
+    &lt;h1&gt;College of Computer Studies&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+        <p>CSS</p>
+        <pre><code>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border: solid 1px black;
+  margin: 30px 40px;
+  padding: 50px;
+}
+
+h2 {
+  border: solid 2px red;
+  margin: 10px 50px;
+  padding: 30px 20px 40px 20px;
+}        
+      </code></pre>
+        <img class="content-img" src="image/paddings.jpg" alt="paddings" />
+      </div>
+      <hr />
+    </div>
+
+    <footer>
+      <p>
+        Submitted to: <br />
+        Mrs. Rina Cabansag
+      </p>
+    </footer>
+  </body>
+</html>
