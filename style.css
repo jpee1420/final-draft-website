@@ -179,7 +179,7 @@ table tr td:first-child {
     text-align: left;
     padding: 20px;
 }
-
+    
 .table-list li {
     list-style-type: none;
 }
@@ -196,6 +196,6 @@ footer p {
     width: 100%;
     height: auto;
     margin: auto 0;
-    padding: 20px;
+    padding: 35px;
     color: aliceblue;
 }
