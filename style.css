@@ -185,17 +185,16 @@ table tr td:first-child {
 }
 
 footer {
-    position: relative;
-    height: 100px;
+    height: 90px;
     width: auto;
     background-color: gray;
     display: flex;
+    align-items: center;
 }
 
 footer p {
     width: 100%;
     height: auto;
-    margin: auto 15px;
-    padding: 20px;
+    margin: 35px;
     color: aliceblue;
 }
